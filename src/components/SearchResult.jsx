@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useParams } from "react-router-dom";
 
-import { fetchDataFromApi } from "../utils/api";
+import { getDataFromAPI } from "../utils/api";
 import { Context } from "../context/ContextApi";
 import LeftNav from "./LeftNav";
 import SearchResultVideoCard from "./SearchResultVideoCard";
@@ -18,8 +18,7 @@ const SearchResult = () => {
 
   const fetchSearchResults = () => {
     setLoading(true);
-    fetchDataFromApi(`search/?q=${searchQuery}`).then((res) => {
-      console.log(res);
+    getDataFromAPI(`search/?q=${searchQuery}`).then((res) => {
       setResult(res?.contents);
       setLoading(false);
     });
