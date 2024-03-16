@@ -26,7 +26,7 @@ const LeftNav = () => {
 
   return (
     <div
-      className={`md:block w-[240px] overflow-y-auto py-4 bg-black absolute md:relative z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
+      className={`md:block w-[240px] overflow-y-scroll no-scrollbar h-screen py-4 bg-black absolute md:sticky top-14 z-10 translate-x-[-240px] md:translate-x-0 transition-all ${
         mobileMenu ? "translate-x-0" : ""
       }`}
     >
