@@ -8,6 +8,7 @@ const VideoCardShimmer = () => {
           <div className="grid grid-cols-4">
             <div className="col-span-4 p-2 m-1 bg-gray-200  dark:bg-stone-800 animate-pulse rounded-md"></div>
             <div className="col-span-2 p-2 m-1 bg-gray-200  dark:bg-stone-800 animate-pulse rounded-md"></div>
+            <div className="col-span-3 p-2 m-1 bg-gray-200  dark:bg-stone-800 animate-pulse rounded-md"></div>
           </div>
         </div>
       </div>
